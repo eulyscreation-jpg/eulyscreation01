@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Euly's Creation01</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+header {
+  background: black;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid gold;
+}
+
+header h1 {
+  color: gold;
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+  background: #1a1a1a;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  color: gold;
+  font-size: 32px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid gold;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  color: gold;
+}
+
+button {
+  background: gold;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid gold;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Euly's Creation01</h1>
+<p>Luxury Custom Creations</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#order">Order</a>
+</nav>
+
+<section class="hero" id="home">
+<h2>Where Elegance Meets Personalization</h2>
+<p>Custom gifts made with love and luxury.</p>
+</section>
+
+<section id="products">
+<h2 style="color: gold; text-align:center;">Our Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="tumbler.jpg">
+<h3>Tumblers</h3>
+<p>20oz - $4000<br>12oz - $3200</p>
+</div>
+
+<div class="product">
+<img src="mug.jpg">
+<h3>Sublimation Mugs</h3>
+<p>Magic - $3000<br>Regular - $2500</p>
+</div>
+
+<div class="product">
+<img src="shirt.jpg">
+<h3>Shirts</h3>
+<p>Round Neck - $1500<br>Polo - $3000<br>Oxford - $2900</p>
+</div>
+
+<div class="product">
+<img src="balloon.jpg">
+<h3>Bobo Balloon</h3>
+<p>$2500<br>Basket - $9500</p>
+</div>
+
+</div>
+</section>
+
+<section id="order">
+<h2 style="color: gold; text-align:center;">Place Your Order</h2>
+
+<form action="https://formsubmit.co/YOUREMAIL@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Order - Euly's Creation01">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="text" name="Phone" placeholder="Phone Number" required>
+
+<select name="Product" required>
+<option value="">Select Product</option>
+<option>Tumbler 20oz - $4000</option>
+<option>Tumbler 12oz - $3200</option>
+<option>Magic Mug - $3000</option>
+<option>Regular Mug - $2500</option>
+<option>Bobo Balloon - $2500</option>
+<option>Bobo Balloon Basket - $9500</option>
+<option>Round Neck Shirt - $1500</option>
+<option>Polo - $3000</option>
+<option>Oxford - $2900</option>
+</select>
+
+<textarea name="Details" placeholder="Describe your design..."></textarea>
+
+<button type="submit">Submit Order</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Euly's Creation01 | Black Girl Boss Luxury</p>
+</footer>
+
+</body>
+</html>
